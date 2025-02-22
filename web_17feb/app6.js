@@ -9,7 +9,7 @@ console.log(resultado2); */
 //TAREA 
 
 //AND
-console.log("----------- Operador Lógico AND -----------");
+console.log("------------ Operador Lógico AND ------------");
 let and0 = false && false;
 let and1 = false && true;
 let and2 = true && false;
@@ -22,7 +22,7 @@ console.log("|true " + "&&" + " true  |" +" = " + and3)
 
 
 //OR
-console.log("----------- Operador Lógico OR -----------" );
+console.log("------------ Operador Lógico OR ------------" );
 let or0 = false || false;
 let or1 = false || true;
 let or2 = true || false;
@@ -34,7 +34,7 @@ console.log("|true " + "||" + " false |" +" = " + or2)
 console.log("|true " + "||" + " true  |" +" = " + or3)
 
 //NOT
-console.log("----------- Operador Lógico NOT -----------" );
+console.log("------------ Operador Lógico NOT ------------" );
 let not0 = !false;
 let not1 = !true;
 console.log("|!false|" +" = " + not0)
