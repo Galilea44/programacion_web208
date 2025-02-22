@@ -4,4 +4,6 @@ console.log(dato);
 
 let dato2=15<=15;
 console.log(dato2);
-let dato3 
+
+let dato3 = 10 == 2;
+console.log(dato3)

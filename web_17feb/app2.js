@@ -11,4 +11,4 @@ let localidad="Ecatepec";
 let altura=1.56;
 let peso=50;
 
-console.log("1.- Mi nombre es: " +nombre+"\n2.- Edad es:" +edad+"años" +"\n3.- Localidad:" +localidad+ "")
+console.log("1.- Mi nombre es: " +nombre+"\n2.- Edad es: " +edad+" años" +"\n3.- Localidad: " +localidad+"\n4.- Altura: "+ altura+"\n5.- Peso: " +peso)

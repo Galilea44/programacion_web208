@@ -15,5 +15,6 @@ console.log("Edad:" );
     let edad=20;
 console.log(edad);
 
-var Alexandra
+var Alexandra ="GOAA22MMCNRLA6";
+var Alexandra ="UNAM";
 
