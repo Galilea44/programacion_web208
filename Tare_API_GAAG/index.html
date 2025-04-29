@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje para WhatsApp</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div id="encabezado">
+            <h1 id="tituloPrin">Mensaje para WhatsApp</h1>
+            <h2 id="Mensaje">¡Complete los siguientes campos!</h2>
+        </div>
+        <div id="ilustracion">
+            <img src="img/sobredos.png" height="115" alt="Img.sobre">
+        </div>
+    </header>
+    <div id="cuerpo"> 
+        <div id="campos">
+            <label class="etiquetas">Celular:</label>
+            <div id="input-con-lada">
+                <select id="lada" required>
+                    <option value="+52">+52</option>
+                    <option value="+1">+1</option>
+                    <option value="+34">+34</option>
+                    <option value="+54">+54</option>
+                </select>
+                <input type="text" id="numero" required maxlength="10" placeholder="Número de celular">
+            </div>
+            <label class="etiquetas">Mensaje:</label>
+            <input type="text" id="mensajeCompleto" required maxlength="100" placeholder="Escribe tu mensaje">
+            <button onclick="enviarMensaje()" id="btnEnviar">Enviar mensaje</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="infoFooter">
+            <span>©Todos los derechos reservados - Alexandra González - Programación web 2</span>
+            <span>Tarea "Manejo de una API"</span>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
