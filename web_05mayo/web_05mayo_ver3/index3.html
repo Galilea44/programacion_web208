@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        background-color: #f9f8f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3px;
+    }
+
+    h1 {
+        color:#ab84b5;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-libros {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 5px; 
+        border: 5px solid #ab5abf; 
+    }
+
+    .item-libro {
+        padding: 5px 0;
+        border-bottom: 5px solid #c1a8c8;
+    }
+
+    .item-libro:last-child {
+        border-bottom: none;
+    }
+
+    .titulo-libro {
+        font-weight: bold;
+        color: #4f81ba;
+        margin-bottom: 5px;
+    }
+
+    .autor-libro {
+        color: #898181;
+        margin-bottom: 3px;
+    }
+
+</style>
+<body>
+    <h1>Mis libros favoritos</h1>
+    <div class="contenedor-libros">
+        <div class="item-libro">
+            <div class="detalles-libro">
+                <div class="titulo-libro">Percy Jackson y el ladrón del rayo</div>
+                <div class="autor-libro">Rick Riordan</div>
+                <div class="genero-libro">Fantasía</div>
+            </div>
+        </div>
+        <div class="item-libro">
+            <div class="detalles-libro">
+                <div class="titulo-libro">La biblioteca de la media noche</div>
+                <div class="autor-libro">Matt Haig</div>
+                <div class="genero-libro">Ciencia ficción</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
