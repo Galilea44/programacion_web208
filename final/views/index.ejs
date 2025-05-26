@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1> <img src="/img/listar.png" height="40" alt="imagen listar"> Listar</h1>
+    <table border="2">
+        <tr>
+            <td><strong>ID</strong></td>
+            <td><strong>Nombre</strong></td>
+            <td><strong>Correo</strong></td>
+            <td><strong>Acciones</strong></td>
+        </tr>
+        <% user.forEach(user => { %>
+            <tr>
+                <td><%= user.id %></td>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+                <td>
+                    <a href="/edit/<%= user.id %>">Editar</a>
+                    <a href="/delete/<%= user.id %>">Eliminar</a>
+                </td>
+            </tr>
+        <% }); %>
+    </table>
+
+   <!-- Agregar usuario -->
+    <h2> <img src="/img/usuario.png" height="40" alt="Agregar usuario"> Agregar usuario</h2>
+    <form action="/add" method="post">
+        <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required maxlength="45" placeholder="Nombre del usuario...">
+            <br><br>
+        <label for="email">Correo:</label>
+            <input type="email" name="email" id="email" placeholder="Correo..." maxlength="45" required>
+        <br><br>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <footer id="footer">
+        <div id="infoFooter">
+            <p>©Todos los derechos reservados  "Alexandra González"  Programación web 2</p>
+        </div>
+    </footer>
+</body>
+</html>
